@@ -12,6 +12,7 @@
 }
 header{
     width: 100%;
+    
   
 }
 
@@ -23,7 +24,7 @@ header{
 
 .navbar {
     margin-top: 30px;
-
+    
 }
 
 .navbar .brand{
@@ -60,7 +61,7 @@ header{
 .navbar .toggle-menu {
     display: flex;
     justify-content: flex-end;
-    margin-top: 30px ;
+    margin-top: 25px ;
     margin-right: 15px;
     
   }
@@ -71,7 +72,7 @@ header{
       display: none;
   }
 
-  @media(max-width:570px){
+  @media(max-width:700px){
       .navbar .toggle-menu i{
           display: block;
           margin: -55px 30px;
@@ -86,13 +87,14 @@ header{
           z-index: 1;
           background-color: #148c23;
           margin-top: 30px;
-          transform: translate(-100%)
+          transform: translateX(-160%);
+          transition: 0.5s ease-in-out;
       }
       .navbar .menu ul li{
           margin: 20px;
           text-transform: uppercase;
       }
-      .menu .menu-on {
-          transform: translate(0%);
+      .navbar .menu .menu-on {
+          transform: translateX(0%);
       }
   }
