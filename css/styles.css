@@ -57,4 +57,42 @@ header{
     color: white;
     font-size: 20px;
 }
+.navbar .toggle-menu {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px ;
+    margin-right: 15px;
+    
+  }
+  .navbar .toggle-menu i{
+      font-size: 30px;
+      cursor: pointer;
+      color: #fff;
+      display: none;
+  }
 
+  @media(max-width:570px){
+      .navbar .toggle-menu i{
+          display: block;
+          margin: -55px 30px;
+      }
+      .navbar .menu ul{
+          flex-direction: column;
+          align-items: center;
+          justify-content: flex-start;
+          width: 100%;
+          height: 100%;
+          position: fixed;
+          z-index: 1;
+          background-color: #148c23;
+          margin-top: 30px;
+          transform: translate(-100%)
+      }
+      .navbar .menu ul li{
+          margin: 20px;
+          text-transform: uppercase;
+      }
+      .menu .menu-on {
+          transform: translate(0%);
+      }
+  }
